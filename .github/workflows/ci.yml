@@ -1,0 +1,12 @@
+name: Sample CI Workflow
+run-name: ${{ github.actor }} is awesome!
+on:
+  push:
+    - main
+
+jobs:
+  run-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello from github actions"
