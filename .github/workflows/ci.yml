@@ -2,7 +2,8 @@ name: Sample CI Workflow
 run-name: ${{ github.actor }} is awesome!
 on:
   push:
-    - main
+    branches:
+      - "main"
 
 jobs:
   run-ci:
